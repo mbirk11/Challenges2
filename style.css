@@ -1,0 +1,108 @@
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: aliceblue;
+    height: 900px;
+    border-radius: 30px;
+    width: auto;
+} 
+.product-img{
+    box-sizing: border-box;
+    height: 900px;
+    width: 600px;
+    background-image: url('images/image-product-desktop.jpg');
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+
+}
+.product-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 900px;
+    width: 600px;
+    word-wrap: break-word;
+}
+.product-description p,h2,h3,h4,h5,button{
+    width: 300px;
+}
+p{  
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+h2{
+   font-weight: 700;
+   font-size: 40px;
+}
+span{ 
+    display:inline;
+}
+h3{ 
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+
+}
+.colors{
+    color:hsl(212, 21%, 14%);
+    color:hsl(228, 12%, 48%);
+    color:hsl(0, 0%, 100%)
+
+}
+h4{
+    font-weight: 100;
+    text-decoration: line-through;
+    font-size: small;
+    position: relative;
+    left: 120px;
+    bottom: 90px;
+}
+h5{
+  color: hsl(228, 12%, 48%); 
+  font-weight: 400;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+button{
+    background-color: hsl(158, 36%, 37%) ;
+    height: 50px;
+    border-radius: 20px;
+    color: aliceblue;
+    border: none;
+}
+button:hover{
+    background-color: hsl(155, 58%, 13%) ;
+    cursor: pointer;
+}
+
+@media (max-width:800px){
+    .container{
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .product-img{
+        background-image: url(images/image-product-mobile.jpg);
+        width: 375px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 30px;
+    } 
+}
